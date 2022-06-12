@@ -1,0 +1,10 @@
+<MyWidget>:
+    id: my_widget
+    TextInput:
+        id: textBox
+        multiline: True
+        readonly: True
+        text: "Please select an image to the right."
+    FileChooserListView:
+        id: filechooser
+        on_selection: my_widget.selected(filechooser.selection)
